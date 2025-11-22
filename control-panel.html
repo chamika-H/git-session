@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Locker | Control Panel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+      background: #f1f3f6;
+      color: #23365d;
+    }
+    .nav {
+      background: #23365d;
+      color: #fff;
+      padding: 18px 30px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.15em;
+      box-shadow: 0 3px 18px rgba(35,54,93,0.13);
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+    }
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav a:hover {
+      color: #91b0ea;
+    }
+    .main-card {
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 5px 30px rgba(35,54,93,0.11);
+      max-width: 400px;
+      margin: 44px auto 0 auto;
+      padding: 36px 34px 30px 34px;
+    }
+    .main-card h2 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 2em;
+      margin-bottom: 22px;
+      color: #1f3570;
+    }
+    .grid {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background: linear-gradient(90deg,#5a7be2,#243c6e);
+      color: #fff;
+      padding: 17px 0;
+      font-size: 1.13em;
+      font-weight: 500;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 2px 10px rgba(90,123,226,0.09);
+      transition: background 0.2s;
+      width: 100%;
+    }
+    .btn:hover {
+      background: linear-gradient(90deg,#243c6e,#5a7be2);
+    }
+    .large-btn {
+      width: 100%;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <span>Smart Locker</span>
+    <div>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="locker-status.html">Locker Status</a>
+      <a href="control-panel.html">Control Panel</a>
+      <a href="settings.html">Settings</a>
+    </div>
+  </div>
+  <div class="main-card">
+    <h2>Control Panel</h2>
+    <div class="grid">
+      <button class="btn">Unlock Door</button>
+      <button class="btn">Lock Door</button>
+      <button class="btn">Buzzer ON/OFF</button>
+      <button class="btn">Reset Data</button>
+    </div>
+    <button class="btn large-btn">RFID Enrollment Mode</button>
+  </div>
+</body>
+</html>
