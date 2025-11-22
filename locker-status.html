@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Locker | Locker Status</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+      background: #f1f3f6;
+      color: #23365d;
+    }
+    .nav {
+      background: #23365d;
+      color: #fff;
+      padding: 18px 30px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.15em;
+      box-shadow: 0 3px 18px rgba(35,54,93,0.13);
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+    }
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav a:hover {
+      color: #91b0ea;
+    }
+    .main-card {
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 5px 30px rgba(35,54,93,0.11);
+      max-width: 400px;
+      margin: 44px auto 0 auto;
+      padding: 36px 34px 30px 34px;
+    }
+    .main-card h2 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 2em;
+      margin-bottom: 22px;
+      color: #1f3570;
+    }
+    .status-row {
+      margin-bottom: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.09em;
+    }
+    .status-label {
+      font-weight: 500;
+      color: #516cae;
+    }
+    .status-value {
+      background: #ecf2fb;
+      color: #375fa4;
+      padding: 8px 16px;
+      border-radius: 9px;
+      font-size: 1em;
+      min-width: 90px;
+      text-align: center;
+      box-shadow: 0 1px 3px #d1d9e6;
+    }
+    .timestamp {
+      margin-top: 18px;
+      color: #939bb9;
+      text-align: center;
+      font-size: 0.97em;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <span>Smart Locker</span>
+    <div>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="locker-status.html">Locker Status</a>
+      <a href="control-panel.html">Control Panel</a>
+      <a href="settings.html">Settings</a>
+    </div>
+  </div>
+  <div class="main-card">
+    <h2>Locker Status</h2>
+    <div class="status-row">
+      <span class="status-label">Door State</span>
+      <span class="status-value">Closed</span>
+    </div>
+    <div class="status-row">
+      <span class="status-label">Weight</span>
+      <span class="status-value">0.0 kg</span>
+    </div>
+    <div class="status-row">
+      <span class="status-label">Last RFID Scanned</span>
+      <span class="status-value">---</span>
+    </div>
+    <div class="status-row">
+      <span class="status-label">Ultrasonic Distance</span>
+      <span class="status-value">---</span>
+    </div>
+    <div class="timestamp">Timestamp Updates</div>
+  </div>
+</body>
+</html>
